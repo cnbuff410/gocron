@@ -305,8 +305,8 @@ func (j *Job) Sunday() *Job {
 // Scheduler struct, the only data member is the list of jobs.
 // - implements the sort.Interface{} for sorting jobs, by the time nextRun
 type Scheduler struct {
-	jobs [MAXJOBNUM]*Job // Array store jobs
-	size int             // Size of jobs which jobs holding.
+	jobs []*Job // Array store jobs
+	size int    // Size of jobs which jobs holding.
 }
 
 func (s *Scheduler) Len() int {

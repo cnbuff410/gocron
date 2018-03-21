@@ -349,3 +349,24 @@ func TestWeekdayAt(t *testing.T) {
 	exp = time.Date(now.Year(), now.Month(), now.Day()+1, hour, minute, 0, 0, loc)
 	assertEqualTime(t, weekJob.nextRun, exp)
 }
+
+// utility function for testing the weekday functions *on* the current weekday.
+func callTodaysWeekday(job *Job) *Job {
+	switch time.Now().Weekday() {
+	case 0:
+		job.Sunday()
+	case 1:
+		job.Monday()
+	case 2:
+		job.Tuesday()
+	case 3:
+		job.Wednesday()
+	case 4:
+		job.Thursday()
+	case 5:
+		job.Friday()
+	case 6:
+		job.Saturday()
+	}
+	return job
+}
