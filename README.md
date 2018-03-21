@@ -2,6 +2,8 @@
 
 **This is a fork from [jasonlvhit's repo](https://github.com/jasonlvhit/gocron). This fork is mainly used by [Stryd](www.stryd.com) backend dev team. It has some PRs merged and other extra changes to better fit Stryd's internal need.**
 
+---------------------------------------
+
 goCron is a Golang job scheduling package which lets you run Go functions periodically at pre-determined interval using a simple, human-friendly syntax.
 
 goCron is a Golang implementation of Ruby module [clockwork](<https://github.com/tomykaira/clockwork>) and Python job scheduling package [schedule](<https://github.com/dbader/schedule>), and personally, this package is my first Golang program, just for fun and practice.
