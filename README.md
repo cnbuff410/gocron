@@ -1,5 +1,5 @@
 ## goCron: A Golang Job Scheduling Package.
-
+[![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](http://godoc.org/github.com/cnbuff410/gocron)
 **This is a fork from [jasonlvhit's repo](https://github.com/jasonlvhit/gocron). This fork is mainly used by [Stryd](www.stryd.com) backend dev team. It has some PRs merged and other extra changes to better fit Stryd's internal need.**
 
 ---------------------------------------
